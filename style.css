@@ -1,0 +1,393 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+body {
+  font-family: "DM Sans", sans-serif !important;
+}
+
+.container {
+  padding: 0 8px;
+  margin: 0 auto;
+}
+
+:root {
+  /* homePage 1 Primary */
+  --primary: #ff4847;
+  --primary2: #2fc6a2;
+  --primary3: #8e59ff;
+}
+
+/* home Page 1 */
+.text-primary {
+  color: var(--primary);
+}
+.bg-primary {
+  background-color: var(--primary);
+}
+
+/* home Page 2 */
+
+.text-primary2 {
+  color: var(--primary2);
+}
+.bg-primary2 {
+  background-color: var(--primary2);
+}
+
+/* home Page 3 */
+
+.text-primary3 {
+  color: var(--primary3);
+}
+.bg-primary3 {
+  background-color: var(--primary3);
+}
+
+/* Navbar Css start*/
+
+.dropdown {
+  position: relative;
+}
+.dropdown:hover ul {
+  display: block;
+}
+.dropdown ul {
+  position: absolute;
+  top: 25px;
+  left: -12px;
+  background-color: white;
+  display: none;
+
+  width: 120px;
+  text-align: center;
+}
+.dropdown ul li {
+  padding: 10px 0px;
+  /* padding: 10px; */
+}
+
+@media only screen and (max-width: 1023px) {
+  .menuUL {
+    /* display: none; */
+    position: fixed;
+    top: 88px;
+    left: 0;
+    height: 120vh;
+    /* background-color: #ff605818; */
+    width: 100vw;
+    min-width: 300px;
+    max-width: 100%;
+    font-size: 20px;
+    padding-left: 20px;
+    backdrop-filter: blur(15px);
+    z-index: 1000;
+  }
+  .menuUL li {
+    padding: 10px 0;
+  }
+  .dropdown ul {
+    position: static;
+    background-color: transparent;
+    /* left: 80px;
+    width: 150px; */
+  }
+}
+
+/* Navbar Css End*/
+
+/* home page 1 Css */
+.updatesShadow {
+  box-shadow: -15px 30px 48px rgba(29, 30, 37, 0.15);
+}
+
+.feturesCard {
+  box-shadow: -15px 30px 48px rgba(29, 30, 37, 0.06);
+  height: 288px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.feturesCard:hover {
+  box-shadow: -15px 30px 48px rgba(29, 30, 37, 0.15);
+}
+
+.collaborateDataSave {
+  box-shadow: 12.873px 25.746px 41.1936px rgba(29, 30, 37, 0.15);
+}
+
+.transformMatrix {
+  transform: matrix(0.97, -0.26, 0.26, 0.97, 0, 0);
+}
+
+.collaborateCardRes {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transform: rotate(-15deg);
+}
+
+.integrationCard {
+  box-shadow: -15px 30px 48px rgba(29, 30, 37, 0.06);
+}
+
+/*  */
+
+/* / media queries  */
+@media only screen and (max-width: 550px) {
+  .collaborateCardRes {
+    flex-direction: column;
+    transform: rotate(0deg);
+  }
+}
+
+/* home page 2 */
+
+.dashboardCard {
+  box-shadow: 0px 0px 81.25px #edeff9;
+}
+
+.dashboardCardFigure {
+  box-shadow: 0px 0px 100px #f6f7fa;
+}
+
+.storySection {
+  margin-top: 1500px;
+}
+.analyticsCard {
+  box-shadow: -15px 30px 48px rgba(29, 30, 37, 0.15);
+}
+.analyticsCard2 {
+  box-shadow: -15px 30px 48px rgba(29, 30, 37, 0.06);
+}
+@media screen and (max-width: 500px) {
+  .storySection {
+    margin-top: 1400px;
+  }
+}
+@media screen and (max-width: 512px) {
+  .storySection {
+    margin-top: 1400px;
+  }
+}
+@media (min-width: 513px) and (max-width: 522px) {
+  .storySection {
+    margin-top: 950px;
+  }
+}
+@media (min-width: 523px) and (max-width: 639px) {
+  .storySection {
+    margin-top: 930px;
+  }
+}
+
+@media (min-width: 640px) {
+  .storySection {
+    margin-top: 670px;
+  }
+}
+@media (min-width: 768px) {
+  .storySection {
+    margin-top: 360px;
+  }
+}
+@media (min-width: 1024px) {
+  .storySection {
+    margin-top: 300px;
+  }
+}
+@media (min-width: 1280px) {
+  .storySection {
+    margin-top: 250px;
+  }
+}
+@media (min-width: 1536px) {
+  .storySection {
+    margin-top: 0px;
+  }
+}
+
+/* shitch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: var(--primary2);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px var(--primary2);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* shitch end*/
+
+/* switch 2 start  */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider2 {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider2:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider2 {
+  background-color: var(--primary);
+}
+
+input:focus + .slider2 {
+  box-shadow: 0 0 1px var(--primary);
+}
+
+input:checked + .slider2:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+/* switch 2 end  */
+
+/* / Rounded sliders / */
+.slider2.round {
+  border-radius: 34px;
+}
+
+.slider2.round:before {
+  border-radius: 50%;
+}
+
+/* PlanCard */
+
+.PlanCard {
+  transition: all 0.3s;
+}
+.PlanCard:hover {
+  background-color: var(--primary2);
+  color: white;
+  transform: translate(0, -40px);
+}
+.PlanCard:hover h1 {
+  color: white;
+}
+
+.PlanCard:hover button {
+  color: var(--primary2);
+  background-color: white;
+}
+
+.PlanCard2 {
+  transition: all 0.3s;
+}
+.PlanCard2 h1 {
+  font-size: 40px !important;
+}
+.PlanCard2:hover {
+  background-color: var(--primary);
+  color: white;
+  transform: translate(0, -40px);
+}
+.PlanCard2:hover h1 {
+  color: white;
+}
+
+.PlanCard2:hover button {
+  color: var(--primary);
+  background-color: white;
+}
+
+/* home Page 3 */
+.bgg {
+  background: radial-gradient(
+    81.16% 143.98% at 50% -5.92%,
+    rgba(142, 89, 255, 0.7) 0%,
+    rgba(29, 30, 37, 0) 61.96%
+  );
+  border-radius: 32px;
+  /* transform: matrix(-1, 0, 0, 1, 0, 0); */
+  /* border-bottom: 2px solid red; */
+}
+
+/* services Page */
+
+.features_Shadow {
+  transition: 0.3s;
+  box-shadow: 0px 0px 29px -25px;
+}
+
+.features_Shadow:hover {
+  box-shadow: 0px 0px 29px -18px;
+}

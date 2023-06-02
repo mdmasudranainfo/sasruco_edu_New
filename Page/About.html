@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind Css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Css -->
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../utiliti.css" />
+
+    <!--fontawesome Kit  -->
+    <script
+      src="https://kit.fontawesome.com/f8c835c21e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- swiperjs -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <title>Sasrico</title>
+  </head>
+  <body class="bg-[#f8f8f8]">
+    <!-- header start -->
+
+    <header class="bg-[#f8f8f8]">
+      <!-- NavBar Start -->
+      <nav class="py-5 fixed w-full top-0 z-50 bg-[#f8f8f8]">
+        <div class="container mx-auto">
+          <div class="flex justify-between items-center">
+            <!-- Collapse Button -->
+            <div id="Collapse" class="btn lg:hidden block">
+              <i class="fa-solid fa-bars text-2xl cursor-pointer"></i>
+            </div>
+            <div class="">
+              <ul id="menuUL" class="lg:flex block hidden gap-8 menuUL">
+                <li>
+                  <p class="font-bold text-lg">
+                    <a href="../index.html">Sasrico</a>
+                    <span class="text-primary">.</span>
+                  </p>
+                </li>
+                <li class="lg:flex items-center gap-2 dropdown">
+                  <span><a>Products</a></span>
+                  <i class="fa-solid fa-caret-down"></i>
+                  <ul>
+                    <li class="text-black">
+                      <a href="../Page/HomePage2.html">Home 2</a>
+                    </li>
+                    <li class="text-black">
+                      <a href="../Page/HomePage3.html">Home 3</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span><a href="../Page/About.html">About</a></span>
+                  <!-- <i class="fa-solid fa-caret-down"></i> -->
+                </li>
+                <li class="flex items-center gap-2">
+                  <a href="../Page/Services.html">Service</a>
+                  <!-- <i class="fa-solid fa-caret-down"></i> -->
+                </li>
+                <li class="flex items-center gap-2">
+                  <a href="../Page/Features.html">Features</a>
+                </li>
+
+                <li class="lg:flex items-center gap-2 dropdown">
+                  <a>Blog</a>
+                  <i class="fa-solid fa-caret-down"></i>
+                  <ul class="text-black">
+                    <li><a href="../Page/Blog.html">Blog</a></li>
+                    <li>
+                      <a href="../Page/Blog_Details.html">Blog Details </a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="flex items-center gap-2">
+                  <a href="../Page/Contac.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div class="flex items-center gap-3">
+              <button
+                class="bg-white text-black rounded-[6px] px-7 py-3 font-semibold"
+              >
+                Log In
+              </button>
+              <button
+                class="text-white bg-black rounded-[6px] px-7 py-3 font-semibold"
+              >
+                Get started
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- NavBar End  -->
+    </header>
+
+    <main>
+      <!-- hero section start -->
+      <section class="pt-[100px]">
+        <div
+          class="container flex justify-between items-center gap-[130px] lg:flex-row flex-col mt-[80px] relative"
+        >
+          <div class="absolute bottom-[-5%] -left-7">
+            <img src="https://i.ibb.co/nct69C8/Line.png" alt="" />
+          </div>
+          <div>
+            <h1 class="leading-[76px] tracking-[-0.04em]">
+              Improve your <span class="text-primary">agility</span>
+              with
+              <br class="md:block hidden" />
+              Sasrico
+            </h1>
+            <p class="text-[#808D9E] text-[18px] font-medium mt-6">
+              There is a time management facility through this modern <br />
+              software time management.
+            </p>
+          </div>
+          <div>
+            <div class="relative">
+              <div class="absolute sm:block hidden top-10 -right-16">
+                <img
+                  class=""
+                  src="https://i.ibb.co/N9rWBQJ/Element-20.png"
+                  alt=""
+                />
+              </div>
+              <div class="absolute top-12 -left-3">
+                <img src="https://i.ibb.co/Fzh7mQq/Element-19.png" alt="" />
+              </div>
+              <img src="https://i.ibb.co/Drcz4GP/Img-3.png" alt="" />
+              <div
+                class="bg-white heroCard1 absolute sm:block hidden bottom-8 md:-right-[70px] -right-6 rounded-[12px] p-[18px]"
+              >
+                <p
+                  class="text-[12.0011px] mb-[18.4px] font-bold leading-4 tracking-[-0.600055px]"
+                >
+                  Product views
+                </p>
+                <div class="flex gap-[7.3px] items-end text-center">
+                  <div>
+                    <div
+                      class="h-[18px] w-[20.4px] bg-primary rounded-[1.20011px]"
+                    ></div>
+                    <p
+                      class="text-[8.40078px] text-[#808D9E] font-bold leading-3 tracking-[-0.300028px] mt-[7.2px]"
+                    >
+                      Mo
+                    </p>
+                  </div>
+                  <div>
+                    <div
+                      class="h-[78.61px] w-[20.4px] bg-[#1D1E25] rounded-[1.20011px]"
+                    ></div>
+                    <p
+                      class="text-[8.40078px] text-[#808D9E] font-bold leading-3 tracking-[-0.300028px] mt-[7.2px]"
+                    >
+                      Tu
+                    </p>
+                  </div>
+                  <div>
+                    <div
+                      class="h-[48px] w-[20.4px] bg-primary rounded-[1.20011px]"
+                    ></div>
+                    <p
+                      class="text-[8.40078px] text-[#808D9E] font-bold leading-3 tracking-[-0.300028px] mt-[7.2px]"
+                    >
+                      We
+                    </p>
+                  </div>
+                  <div>
+                    <div
+                      class="h-[11.4px] w-[20.4px] bg-[#1D1E25] rounded-[1.20011px]"
+                    ></div>
+                    <p
+                      class="text-[8.40078px] text-[#808D9E] font-bold leading-3 tracking-[-0.300028px] mt-[7.2px]"
+                    >
+                      Th
+                    </p>
+                  </div>
+                  <div>
+                    <div
+                      class="h-[26.4px] w-[20.4px] bg-primary rounded-[1.20011px]"
+                    ></div>
+                    <p
+                      class="text-[8.40078px] text-[#808D9E] font-bold leading-3 tracking-[-0.300028px] mt-[7.2px]"
+                    >
+                      Fr
+                    </p>
+                  </div>
+                  <div>
+                    <div
+                      class="h-[42px] w-[20.4px] bg-[#1D1E25] rounded-[1.20011px]"
+                    ></div>
+                    <p
+                      class="text-[8.40078px] text-[#808D9E] font-bold leading-3 tracking-[-0.300028px] mt-[7.2px]"
+                    >
+                      Sa
+                    </p>
+                  </div>
+                  <div>
+                    <div
+                      class="h-[31px] w-[20.4px] bg-primary rounded-[1.20011px]"
+                    ></div>
+                    <p
+                      class="text-[8.40078px] text-[#808D9E] font-bold leading-3 tracking-[-0.300028px] mt-[7.2px]"
+                    >
+                      Su
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="absolute bottom-[140px] md:-right-32 -right-12 bg-white sm:flex hidden items-center gap-[2px] px-[21px] py-[31px] rounded-[10.7666px] heroCard2 z-20"
+              >
+                <div>
+                  <p class="text-[#224272] text-[9.42082px] opacity-40">
+                    Reader Rates
+                  </p>
+                  <p class="text-[16.15px] text-[#5049AA] font-bold my-[13px]">
+                    3,729
+                  </p>
+                  <div class="flex items-center gap-1">
+                    <i
+                      class="fa-solid fa-arrow-up text-[#4AAF05] text-[8.07499px]"
+                    ></i>
+                    <p
+                      class="text-[#4AAF05] text-[8.07499px] leading-[11px] tracking-[0.269166px]"
+                    >
+                      7,00%
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <img src="https://i.ibb.co/jzP7Y6y/Vector-1.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- hero section end -->
+
+      <!-- partners section start -->
+      <section class="container mt-[100px] mb-[130px]">
+        <div class="py-7">
+          <div class="">
+            <div
+              class="flex md:justify-between justify-center items-center flex-wrap gap-[30px]"
+            >
+              <div class=" ">
+                <div>
+                  <img src="https://i.ibb.co/pyw0rYP/Logo-5.png" alt="" />
+                </div>
+              </div>
+              <div class=" ">
+                <div>
+                  <img src="https://i.ibb.co/ssstTVj/Logo.png" alt="" />
+                </div>
+              </div>
+              <div class=" ">
+                <div>
+                  <img src="https://i.ibb.co/XJ1g0sj/Logo-1.png" alt="" />
+                </div>
+              </div>
+              <div class=" ">
+                <div>
+                  <img src="https://i.ibb.co/zxLKD6y/Logo-2.png" alt="" />
+                </div>
+              </div>
+              <div class=" ">
+                <div>
+                  <img src="https://i.ibb.co/5vYZsfm/Logo-3.png" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <!-- trusted compay carousel end -->
+            <div></div>
+          </div>
+        </div>
+      </section>
+      <!-- partners section end -->
+
+      <!-- Features Playing off START -->
+      <section class="relative">
+        <div class="absolute right-0 top-0 md:block hidden">
+          <img src="https://i.ibb.co/8P1LC64/Line.png" alt="" />
+        </div>
+        <div class="container">
+          <div class="my-[150px] relative">
+            <div class="">
+              <img
+                class="absolute md:block hidden"
+                src="https://i.ibb.co/s2CBLPx/Element.png"
+                alt=""
+              />
+            </div>
+            <div class="md:w-[610px] mx-auto text-center mb-[64px]">
+              <p
+                class="text-[14px] font-bold leading-[20px] text-primary m-[16px]"
+              >
+                Features
+              </p>
+              <h2>
+                <span class="text-primary">Paying off</span> and adjust your
+                strategy.
+              </h2>
+            </div>
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20 justify-between"
+            >
+              <div
+                class="px-[24px] h-[280px] w-full features_Shadow bg-white rounded-[16px]"
+              >
+                <div class="mt-[36px] mb-[40px]">
+                  <i class="fa-solid fa-gear text-[22px] text-primary"></i>
+                </div>
+                <div class="mb-[70px]">
+                  <h4 class="mb-[16px]">Analyze your data</h4>
+                  <p class="text-[16px] font-medium text-[#808D9E]">
+                    Resource management is the process of pre-planing,
+                  </p>
+                </div>
+              </div>
+              <div
+                class="px-[24px] h-[280px] w-full features_Shadow bg-white rounded-[16px] md:mt-[70px]"
+              >
+                <div class="mt-[36px] mb-[40px]">
+                  <i
+                    class="fa-solid fa-chart-line text-[22px] text-primary"
+                  ></i>
+                </div>
+                <div class="mb-[70px]">
+                  <h4 class="mb-[16px]">Embedded Analytics</h4>
+                  <p class="text-[16px] font-medium text-[#808D9E]">
+                    Resource management is the process of pre-planing,
+                  </p>
+                </div>
+              </div>
+              <div
+                class="px-[24px] h-[280px] w-full features_Shadow bg-white rounded-[16px]"
+              >
+                <div class="mt-[36px] mb-[40px]">
+                  <i
+                    class="fa-solid fa-user-group text-[22px] text-primary"
+                  ></i>
+                </div>
+                <div class="mb-[70px]">
+                  <h4 class="mb-[16px]">Collaborate securely</h4>
+                  <p class="text-[16px] font-medium text-[#808D9E]">
+                    Resource management is the process of pre-planing,
+                  </p>
+                </div>
+              </div>
+              <div
+                class="px-[24px] h-[280px] w-full features_Shadow bg-white rounded-[16px] md:mt-[70px]"
+              >
+                <div class="mt-[36px] mb-[40px]">
+                  <i
+                    class="fa-regular fa-file-lines text-[22px] text-primary"
+                  ></i>
+                </div>
+                <div class="mb-[70px]">
+                  <h4 class="mb-[16px]">Unified reporting</h4>
+                  <p class="text-[16px] font-medium text-[#808D9E]">
+                    Resource management is the process of pre-planing,
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Features Playing off END -->
+
+      <!-- achievement section start -->
+      <section class="mt-[150px]">
+        <div
+          class="container bg-primary md:px-[50px] px-4 md:py-[100px] py-10 rounded-[32px] relative"
+        >
+          <div class="absolute -top-11 left-24 md:block hidden">
+            <img src="https://i.ibb.co/PZkd5ng/Element.png" alt="" />
+          </div>
+          <div
+            class="flex items-center justify-between gap-[30px] lg:flex-row flex-col"
+          >
+            <div>
+              <div>
+                <img
+                  class="sm:h-[380px]"
+                  src="https://i.ibb.co/F8tgzKh/Img.png"
+                  alt=""
+                />
+              </div>
+              <div class="mt-[80px]">
+                <p
+                  class="text-white text-[16px] leading-5 font-bold tracking-[-0.5px] mb-[16px]"
+                >
+                  Our achievement
+                </p>
+                <h1
+                  class="!text-[60px] leading-[64px] text-white tracking-[-0.03em] mt-4"
+                >
+                  We generated 2x <br class="sm:block hidden" />
+                  high speed of <br class="sm:block hidden" />
+                  company
+                </h1>
+              </div>
+            </div>
+            <div class="lg:w-[600px]">
+              <div class="bg-[#1D1E25] rounded-[24px] px-[40px] py-[52px]">
+                <p
+                  class="text-[30px] text-white font-bold leading-[36px] tracking-[-0.02em]"
+                >
+                  Our statement
+                </p>
+                <h6
+                  class="leading-[26px] tracking-[-0.5px] font-bold mt-[30px] text-white mb-[21px]"
+                >
+                  “ Nulla ultrices, dui id sollicitudin pretium, <br />
+                  lacus mi maximus velit et vulputate justo elit <br />
+                  purus. In iaculis vitae enim id dictum.”
+                </h6>
+                <div class="border-t-2 border-[#5e5e5e] pt-6">
+                  <div class="flex items-center gap-5 sm:flex-row flex-col">
+                    <div
+                      class="h-[60px] w-[60px] bg-[#FFBC99] flex items-center justify-center"
+                    >
+                      <img
+                        src="https://i.ibb.co/L9Nzvgr/ri-double-quotes-l.png"
+                        alt=""
+                      />
+                    </div>
+                    <div>
+                      <h6 class="text-white leading-[26px] tracking-[-0.5px]">
+                        Jonah Jameson
+                      </h6>
+                      <p
+                        class="font-medium leading-[26px] tracking-[-0.5px] opacity-60 text-white mt-[2px]"
+                      >
+                        CEO of Youngtech
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="lg:w-[470px] grid grid-cols-2 gap-[48px] mt-[80px]">
+                <div>
+                  <h2 class="leading-[52px] tracking-[-0.02em] text-white">
+                    <span class="counter">98</span> %
+                  </h2>
+                  <p class="text-[18px] font-medium leading-7 text-white mt-4">
+                    Client satisfaction
+                  </p>
+                </div>
+                <div>
+                  <h2 class="leading-[52px] tracking-[-0.02em] text-white">
+                    <span class="counter">30</span> %
+                  </h2>
+                  <p class="text-[18px] font-medium leading-7 text-white mt-4">
+                    Decrease expenses
+                  </p>
+                </div>
+                <div>
+                  <h2 class="leading-[52px] tracking-[-0.02em] text-white">
+                    <span class="counter"> 7.6</span> M
+                  </h2>
+                  <p class="text-[18px] font-medium leading-7 text-white mt-4">
+                    Money flow users
+                  </p>
+                </div>
+                <div>
+                  <h2 class="leading-[52px] tracking-[-0.02em] text-white">
+                    <span class="counter">150</span> +
+                  </h2>
+                  <p class="text-[18px] font-medium leading-7 text-white mt-4">
+                    New features
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- achievement section end -->
+
+      <!-- Collaborate section start -->
+      <section class="mt-32 relative">
+        <div class="absolute right-[9%] bottom-0">
+          <img src="https://i.ibb.co/wNKSrKS/Element-1.png" alt="" />
+        </div>
+        <div
+          class="container flex justify-between items-center lg:gap-[100px] lg:flex-row flex-col"
+        >
+          <div class="lg:w-1/2">
+            <img
+              class="w-full h-full"
+              src="https://i.ibb.co/mcKy8Nb/Img-1.png"
+              alt=""
+            />
+          </div>
+          <div class="lg:w-1/2">
+            <p
+              class="text-[18px] text-primary font-medium leading-7 uppercase tracking-[-1px]"
+            >
+              Collaborate
+            </p>
+            <h1 class="!text-[60px] mt-4 leading-[64px] tracking-[-0.03em]">
+              Collaborate with your
+              <span class="text-primary">team</span> easily
+            </h1>
+            <p
+              class="text-[#808D9E] pb-[24px] border-b text-[18px] font-medium leading-7 mt-[30px]"
+            >
+              Donec bibendum, dui id ultrices molestie, neque neque porta felis,
+              id viverra ligula justo interdum mi.
+            </p>
+            <ul class="grid mt-[30px] md:grid-cols-2 grid-cols-1 gap-y-3 mt-8">
+              <li
+                class="text-[18px] font-medium leading-7 text-[ #1D1E25] flex items-center gap-3 mb-[12px]"
+              >
+                <i class="fa-solid fa-circle-check"></i>
+                <p>Organize your data</p>
+              </li>
+              <li
+                class="text-[18px] font-medium leading-7 text-[ #1D1E25] flex items-center gap-3 mb-[12px]"
+              >
+                <i class="fa-solid fa-circle-check"></i>
+                <p>Always in sync</p>
+              </li>
+              <li
+                class="text-[18px] font-medium leading-7 text-[ #1D1E25] flex items-center gap-3 mb-[12px]"
+              >
+                <i class="fa-solid fa-circle-check"></i>
+                <p>Work with any team</p>
+              </li>
+              <li
+                class="text-[18px] font-medium leading-7 text-[ #1D1E25] flex items-center gap-3 mb-[12px]"
+              >
+                <i class="fa-solid fa-circle-check"></i>
+                <p>Embedded analytics</p>
+              </li>
+              <li
+                class="text-[18px] font-medium leading-7 text-[ #1D1E25] flex items-center gap-3 mb-[12px]"
+              >
+                <i class="fa-solid fa-circle-check"></i>
+                <p>Business analytics</p>
+              </li>
+            </ul>
+            <div>
+              <button
+                class="text-[16px] font-bold border rounded-[8px] mt-[44px] py-[16px] px-[32px] hover:bg-white hover:text-[#FF4847] ease-in duration-200"
+              >
+                Get started now
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Collaborate section end -->
+
+      <!-- our team section start -->
+      <section class="mt-[140px]">
+        <div class="relative lg:w-[750px] mx-auto">
+          <div class="absolute -left-16 -mt-2">
+            <img src="https://i.ibb.co/Jxjrgbg/Element-2.png" alt="" />
+          </div>
+          <p
+            class="font-bold leading-5 text-[16px] mb-[16px] text-primary tracking-[-1px] uppercase text-center"
+          >
+            our team
+          </p>
+          <h1
+            class="!text-[60px] leading-[64px] mt-4 tracking-[-0.03em] text-center"
+          >
+            Meet our talented team <br class="sm:block hidden" />
+            <span class="text-primary">members</span>
+          </h1>
+        </div>
+        <div
+          class="container grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[30px] mt-[64px] justify-items-center"
+        >
+          <div class="hover:opacity-80 ease-in duration-200">
+            <div>
+              <img src="https://i.ibb.co/BV03YJs/Img-2.png" alt="" />
+            </div>
+            <div class="mt-9 px-6">
+              <h5 class="!text-[30px] font-bold leading-9 tracking-[-0.02em]">
+                Cameron Williamson
+              </h5>
+              <p
+                class="text-[#808D9E] text-[14px] font-bold leading-5 tracking-[-0.5px] mt-[5px]"
+              >
+                Founder
+              </p>
+            </div>
+          </div>
+          <div class="hover:opacity-80 ease-in duration-200">
+            <div>
+              <img src="https://i.ibb.co/7QR0vSH/Img-4.png" alt="" />
+            </div>
+            <div class="mt-9 px-6">
+              <h5 class="!text-[30px] font-bold leading-9 tracking-[-0.02em]">
+                Cameron Williamson
+              </h5>
+              <p
+                class="text-[#808D9E] text-[14px] font-bold leading-5 tracking-[-0.5px] mt-[5px]"
+              >
+                Founder
+              </p>
+            </div>
+          </div>
+          <div class="hover:opacity-80 ease-in duration-200">
+            <div>
+              <img src="https://i.ibb.co/SKH6vr7/Img-5.png" alt="" />
+            </div>
+            <div class="mt-9 px-6">
+              <h5 class="!text-[30px] font-bold leading-9 tracking-[-0.02em]">
+                Cameron Williamson
+              </h5>
+              <p
+                class="text-[#808D9E] text-[14px] font-bold leading-5 tracking-[-0.5px] mt-[5px]"
+              >
+                Founder
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center mt-[64px]">
+          <button
+            class="font-bold leading-5 text-white tracking-[-0.5px] bg-primary px-[32px] text-[16px] py-[16px] rounded-[8px] hover:bg-white hover:text-[#FF4847] ease-in duration-200 hover:border-[#FF4847] border"
+          >
+            View all members
+          </button>
+        </div>
+      </section>
+      <!-- our team section end -->
+
+      <!-- latest updates section start -->
+      <section class="relative mb-[150px]">
+        <div class="absolute -bottom-24">
+          <img src="https://i.ibb.co/z8hkk6J/Frame-1000004858.png" alt="" />
+        </div>
+        <div class="container mb-32 mt-[140px]">
+          <p
+            class="text-[14px] font-bold leading-5 tracking-[-0.5px] text-primary mb-4"
+          >
+            Dashboard
+          </p>
+          <div class="flex items-center justify-between gap-4 flex-wrap">
+            <h1 class="leading-[64px] tracking-[-0.03em]">
+              Our latest updates
+            </h1>
+            <div>
+              <button
+                class="text-white font-bold leading-5 tracking-[-0.05px] bg-[#1D1E25] px-6 py-3 rounded-md"
+              >
+                View all
+              </button>
+            </div>
+          </div>
+          <div
+            class="grid mt-14 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[30px]"
+          >
+            <div class="hover:opacity-80 ease-in duration-200">
+              <div>
+                <img
+                  class="w-full"
+                  src="https://i.ibb.co/NrKYHwq/Img.png"
+                  alt=""
+                />
+              </div>
+              <div class="mt-8 border-b pb-5">
+                <div class="flex gap-3">
+                  <p
+                    class="uppercase text-primary text-[14px] leading-[14px] font-medium bg-white px-3 py-1 rounded-[4px] updatesShadow"
+                  >
+                    cloud
+                  </p>
+                  <p
+                    class="uppercase text-primary text-[14px] leading-[14px] font-medium bg-white px-3 py-1 rounded-[4px] updatesShadow"
+                  >
+                    app development
+                  </p>
+                </div>
+                <h5 class="leading-[30px] tracking-[-1px] mt-4">
+                  15+ Most Effective and Proven Time Management Techniques
+                </h5>
+              </div>
+              <p
+                class="font-medium text-[16px] font-bold leading-[26px] tracking-[-0.5px] mt-4"
+              >
+                October 27, 2021 | 4 min read
+              </p>
+            </div>
+            <div class="hover:opacity-80 ease-in duration-200">
+              <div>
+                <img
+                  class="w-full"
+                  src="https://i.ibb.co/gSvCs8h/Img-1.png"
+                  alt=""
+                />
+              </div>
+              <div class="mt-8 border-b pb-5">
+                <div class="flex gap-3">
+                  <p
+                    class="uppercase text-primary text-[14px] leading-[14px] font-medium bg-white px-3 py-1 rounded-[4px] updatesShadow"
+                  >
+                    server
+                  </p>
+                </div>
+                <h5 class="leading-[30px] tracking-[-1px] mt-4">
+                  15+ Most Effective and Proven Time Management Techniques
+                </h5>
+              </div>
+              <p
+                class="font-medium leading-[26px] tracking-[-0.5px] mt-4 text-[16px] font-bold"
+              >
+                October 27, 2021 | 4 min read
+              </p>
+            </div>
+            <div class="hover:opacity-80 ease-in duration-200">
+              <div>
+                <img
+                  class="w-full"
+                  src="https://i.ibb.co/JkY4krn/Img-2.png"
+                  alt=""
+                />
+              </div>
+              <div class="mt-8 border-b pb-5">
+                <div class="flex gap-3">
+                  <p
+                    class="uppercase text-primary text-[14px] leading-[14px] font-medium bg-white px-3 py-1 rounded-[4px] updatesShadow"
+                  >
+                    business
+                  </p>
+                </div>
+                <h5 class="leading-[30px] tracking-[-1px] mt-4">
+                  15+ Most Effective and Proven Time Management Techniques
+                </h5>
+              </div>
+              <p
+                class="font-medium leading-[26px] tracking-[-0.5px] mt-4 text-[16px] font-bold"
+              >
+                October 27, 2021 | 4 min read
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- latest updates section end -->
+    </main>
+
+    <!-- footer  start -->
+    <footer class="bg-[#1D1E25] pt-[100px] pb-[80px] relative">
+      <div class="absolute right-20 -top-5">
+        <img src="https://i.ibb.co/vv1Pr9c/Element-5.png" alt="" />
+      </div>
+      <div class="absolute left-8 top-14">
+        <img src="https://i.ibb.co/mb8r7Mq/Element.png" alt="" />
+      </div>
+      <div class="absolute bottom-10">
+        <img src="https://i.ibb.co/gSRDXT3/Element-1.png" alt="" />
+      </div>
+      <section class="w-4/5 mx-auto">
+        <div class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-4">
+          <div>
+            <p
+              class="text-[20px] text-white font-bold leading-5 tracking-[-1px] mb-10"
+            >
+              Product
+            </p>
+            <ul>
+              <li
+                class="cursor-pointer hover:underline leading-5 font-medium text-white opacity-50"
+              >
+                Email Row
+              </li>
+              <li
+                class="cursor-pointer hover:underline leading-5 my-[20px] font-medium text-white opacity-50"
+              >
+                Free Tools
+              </li>
+              <li
+                class="cursor-pointer hover:underline leading-5 my-[20px] font-medium text-white opacity-50"
+              >
+                Agents
+              </li>
+              <li
+                class="cursor-pointer hover:underline leading-5 my-[20px] font-medium text-white opacity-50"
+              >
+                Blog
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p
+              class="text-[20px] text-white font-bold leading-5 tracking-[-1px] mb-10"
+            >
+              Resources
+            </p>
+            <ul>
+              <li
+                class="cursor-pointer hover:underline leading-5 font-medium text-white opacity-50"
+              >
+                Our Agents
+              </li>
+              <li
+                class="cursor-pointer hover:underline leading-5 my-[20px] font-medium text-white opacity-50"
+              >
+                Member Stories
+              </li>
+              <li
+                class="cursor-pointer hover:underline leading-5 my-[20px] font-medium text-white opacity-50"
+              >
+                Video
+              </li>
+              <li
+                class="cursor-pointer hover:underline leading-5 my-[20px] font-medium text-white opacity-50"
+              >
+                Free trial
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p
+              class="text-[20px] text-white font-bold leading-5 tracking-[-1px] mb-10"
+            >
+              Company
+            </p>
+            <ul>
+              <li
+                class="cursor-pointer hover:underline leading-5 font-medium text-white opacity-50"
+              >
+                Patnerships
+              </li>
+              <li
+                class="cursor-pointer hover:underline leading-5 my-[20px] font-medium text-white opacity-50"
+              >
+                Terms of use
+              </li>
+              <li
+                class="cursor-pointer hover:underline leading-5 my-[20px] font-medium text-white opacity-50"
+              >
+                Privacy
+              </li>
+              <li
+                class="cursor-pointer hover:underline leading-5 my-[20px] font-medium text-white opacity-50"
+              >
+                Sitemap
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p
+              class="text-[20px] text-white font-bold leading-5 tracking-[-1px] mb-10"
+            >
+              Get in touch
+            </p>
+            <p class="font-medium leading-5 text-white opacity-50">
+              You’ll find your next Marketing valu you prefer.
+            </p>
+            <div class="flex items-center gap-3 mt-[62px]">
+              <div
+                class="h-[32px] w-[32px] rounded-[6px] flex items-center justify-center bg-white"
+              >
+                <i class="fa-brands fa-facebook-f"></i>
+              </div>
+              <div
+                class="h-[32px] w-[32px] rounded-[6px] flex items-center justify-center bg-white"
+              >
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+              <div
+                class="h-[32px] w-[32px] rounded-[6px] flex items-center justify-center bg-white"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center justify-between flex-wrap mt-[80px]">
+          <div>
+            <p class="text-[30px] font-bold italic text-white">
+              Sasrico<span class="text-primary2">.</span>
+            </p>
+          </div>
+          <div>
+            <p class="font-medium text-white opacity-50">
+              Copyright 2020.com, All rights reserved.
+            </p>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <!-- footer  end -->
+
+    <!-- jQuery Cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- counterUp -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+    <script src="../js/jquery.counterup.min.js"></script>
+
+    <!-- <script>
+      $(".counter").counterUp({
+        delay: 50,
+        time: 1000,
+      });
+    </script> -->
+    <script src="../main.js"></script>
+  </body>
+</html>

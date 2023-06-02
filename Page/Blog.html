@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind Css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Css -->
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../utiliti.css" />
+
+    <!--fontawesome Kit  -->
+    <script
+      src="https://kit.fontawesome.com/f8c835c21e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- swiperjs -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <title>Sasrico</title>
+  </head>
+  <body>
+    <!-- header start -->
+
+    <header class="bg-[#F8F8F8]">
+      <!-- NavBar Start -->
+      <nav class="py-5 fixed w-full top-0 z-50 bg-white">
+        <div class="container mx-auto">
+          <div class="flex justify-between items-center">
+            <!-- Collapse Button -->
+            <div id="Collapse" class="btn lg:hidden block">
+              <i class="fa-solid fa-bars text-2xl cursor-pointer"></i>
+            </div>
+            <div class="">
+              <ul id="menuUL" class="lg:flex block hidden gap-8 menuUL">
+                <li>
+                  <p class="font-bold text-lg">
+                    <a href="../index.html">Sasrico</a>
+                    <span class="text-primary">.</span>
+                  </p>
+                </li>
+                <li class="lg:flex items-center gap-2 dropdown">
+                  <span><a>Products</a></span>
+                  <i class="fa-solid fa-caret-down"></i>
+                  <ul>
+                    <li class="text-black">
+                      <a href="../Page/HomePage2.html">Home 2</a>
+                    </li>
+                    <li class="text-black">
+                      <a href="../Page/HomePage3.html">Home 3</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span><a href="../Page/About.html">About</a></span>
+                  <!-- <i class="fa-solid fa-caret-down"></i> -->
+                </li>
+                <li class="flex items-center gap-2">
+                  <a href="../Page/Services.html">Service</a>
+                  <!-- <i class="fa-solid fa-caret-down"></i> -->
+                </li>
+                <li class="flex items-center gap-2">
+                  <a href="../Page/Features.html">Features</a>
+                </li>
+
+                <li class="lg:flex items-center gap-2 dropdown">
+                  <a>Blog</a>
+                  <i class="fa-solid fa-caret-down"></i>
+                  <ul class="text-black">
+                    <li><a href="../Page/Blog.html">Blog</a></li>
+                    <li>
+                      <a href="../Page/Blog_Details.html">Blog Details </a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="flex items-center gap-2">
+                  <a href="../Page/Contac.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div class="flex items-center gap-3">
+              <button
+                class="bg-white text-black rounded-[6px] px-7 py-3 font-semibold"
+              >
+                Log In
+              </button>
+              <button
+                class="text-white bg-black rounded-[6px] px-7 py-3 font-semibold"
+              >
+                Get started
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- NavBar End  -->
+    </header>
+
+    <main class="">
+      <!-- latest updates section start -->
+      <section class="mb-[150px] mt-[80px] relative pt-[100px]">
+        <div class="absolute right-0 -bottom-40">
+          <img src="https://i.ibb.co/ZMTZbrG/Vector-620.png" alt="" />
+        </div>
+        <div class="w-4/5 mx-auto relative">
+          <div class="absolute right-0">
+            <img src="https://i.ibb.co/pJHhR3d/Element-3.png" alt="" />
+          </div>
+          <p
+            class="text-[14px] font-bold leading-5 tracking-[-0.5px] text-primary mb-4"
+          >
+            LATEST NEWS
+          </p>
+          <div class="">
+            <h1 class="leading-[64px] tracking-[-0.03em] !text-[60px]">
+              Our latest updates
+            </h1>
+          </div>
+          <div
+            class="grid mt-14 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-[30px] gap-y-16"
+          >
+            <div>
+              <div>
+                <img
+                  class="w-full"
+                  src="https://i.ibb.co/NrKYHwq/Img.png"
+                  alt=""
+                />
+              </div>
+              <div class="mt-8 border-b pb-5">
+                <div class="flex gap-3">
+                  <p
+                    class="uppercase text-primary text-[14px] leading-[14px] font-medium bg-white px-3 py-1 rounded-[4px] updatesShadow"
+                  >
+                    cloud
+                  </p>
+                  <p
+                    class="uppercase text-primary text-[14px] leading-[14px] font-medium bg-white px-3 py-1 rounded-[4px] updatesShadow"
+                  >
+                    app development
+                  </p>
+                </div>
+                <h5 class="leading-[30px] mt-4">
+                  15+ Most Effective and Proven Time Management Techniques
+                </h5>
+              </div>
+              <p class="font-medium leading-[26px] tracking-[-0.5px] mt-4">
+                October 27, 2021 | 4 min read
+              </p>
+            </div>
+            <div>
+              <div>
+                <img
+                  class="w-full"
+                  src="https://i.ibb.co/gSvCs8h/Img-1.png"
+                  alt=""
+                />
+              </div>
+              <div class="mt-8 border-b pb-5">
+                <div class="flex gap-3">
+                  <p
+                    class="uppercase text-primary text-[14px] leading-[14px] font-medium bg-white px-3 py-1 rounded-[4px] updatesShadow"
+                  >
+                    server
+                  </p>
+                </div>
+                <h5 class="leading-[30px] mt-4">
+                  15+ Most Effective and Proven Time Management Techniques
+                </h5>
+              </div>
+              <p class="font-medium leading-[26px] tracking-[-0.5px] mt-4">
+                October 27, 2021 | 4 min read
+              </p>
+            </div>
+            <div>
+              <div>
+                <img
+                  class="w-full"
+                  src="https://i.ibb.co/JkY4krn/Img-2.png"
+                  alt=""
+                />
+              </div>
+              <div class="mt-8 border-b pb-5">
+                <div class="flex gap-3">
+                  <p
+                    class="uppercase text-primary text-[14px] leading-[14px] font-medium bg-white px-3 py-1 rounded-[4px] updatesShadow"
+                  >
+                    business
+                  </p>
+                </div>
+                <h5 class="leading-[30px] mt-4">
+                  15+ Most Effective and Proven Time Management Techniques
+                </h5>
+              </div>
+              <p class="font-medium leading-[26px] tracking-[-0.5px] mt-4">
+                October 27, 2021 | 4 min read
+              </p>
+            </div>
+            <div>
+              <div>
+                <img
+                  class="w-full"
+                  src="https://i.ibb.co/CztyZxL/Img-6.png"
+                  alt=""
+                />
+              </div>
+              <div class="mt-8 border-b pb-5">
+                <div class="flex gap-3">
+                  <p
+                    class="uppercase text-primary text-[14px] leading-[14px] font-medium bg-white px-3 py-1 rounded-[4px] updatesShadow"
+                  >
+                    cloud
+                  </p>
+                  <p
+                    class="uppercase text-primary text-[14px] leading-[14px] font-medium bg-white px-3 py-1 rounded-[4px] updatesShadow"
+                  >
+                    app development
+                  </p>
+                </div>
+                <h5 class="leading-[30px] mt-4">
+                  15+ Most Effective and Proven Time Management Techniques
+                </h5>
+              </div>
+              <p class="font-medium leading-[26px] tracking-[-0.5px] mt-4">
+                October 27, 2021 | 4 min read
+              </p>
+            </div>
+            <div>
+              <div>
+                <img
+                  class="w-full"
+                  src="https://i.ibb.co/yNVtLYn/Img-7.png"
+                  alt=""
+                />
+              </div>
+              <div class="mt-8 border-b pb-5">
+                <div class="flex gap-3">
+                  <p
+                    class="uppercase text-primary text-[14px] leading-[14px] font-medium bg-white px-3 py-1 rounded-[4px] updatesShadow"
+                  >
+                    server
+                  </p>
+                </div>
+                <h5 class="leading-[30px] mt-4">
+                  15+ Most Effective and Proven Time Management Techniques
+                </h5>
+              </div>
+              <p class="font-medium leading-[26px] tracking-[-0.5px] mt-4">
+                October 27, 2021 | 4 min read
+              </p>
+            </div>
+            <div>
+              <div>
+                <img
+                  class="w-full"
+                  src="https://i.ibb.co/ypd9L8t/Img-8.png"
+                  alt=""
+                />
+              </div>
+              <div class="mt-8 border-b pb-5">
+                <div class="flex gap-3">
+                  <p
+                    class="uppercase text-primary text-[14px] leading-[14px] font-medium bg-white px-3 py-1 rounded-[4px] updatesShadow"
+                  >
+                    business
+                  </p>
+                </div>
+                <h5 class="leading-[30px] mt-4">
+                  15+ Most Effective and Proven Time Management Techniques
+                </h5>
+              </div>
+              <p class="font-medium leading-[26px] tracking-[-0.5px] mt-4">
+                October 27, 2021 | 4 min read
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- latest updates section end -->
+
+      <!-- latest news section start -->
+      <section class="mb-32">
+        <div class="w-4/5 mx-auto">
+          <div>
+            <p
+              class="text-[14px] font-bold leading-5 tracking-[-0.5px] text-primary mb-4"
+            >
+              LATEST NEWS
+            </p>
+            <h1 class="leading-[64px] tracking-[-0.03em] !text-[60px]">
+              New post
+            </h1>
+          </div>
+          <div
+            class="grid lg:grid-cols-2 grid-cols-1 gap-x-[30px] gap-y-[56px] mt-[64px]"
+          >
+            <div class="flex md:flex-row flex-col gap-[30px]">
+              <div class="">
+                <img
+                  class="!min-w-[170px] h-[140px]"
+                  src="https://i.ibb.co/syLdXf4/Img-9.png"
+                  alt=""
+                />
+              </div>
+              <div class="">
+                <div class="flex gap-3">
+                  <p
+                    class="uppercase text-primary text-[14px] leading-[14px] font-medium bg-white px-3 py-1 rounded-[4px] updatesShadow"
+                  >
+                    cloud
+                  </p>
+                  <p
+                    class="uppercase text-primary text-[14px] leading-[14px] font-medium bg-white px-3 py-1 rounded-[4px] updatesShadow"
+                  >
+                    app development
+                  </p>
+                </div>
+                <h5 class="leading-[30px] mt-1 border-b pb-3">
+                  15+ Most Effective and Proven Time Management Techniques
+                </h5>
+                <p class="font-medium leading-[26px] tracking-[-0.5px] mt-2">
+                  October 27, 2021 | 4 min read
+                </p>
+              </div>
+            </div>
+            <div class="flex md:flex-row flex-col gap-[30px]">
+              <div class="">
+                <img
+                  class="!min-w-[170px] h-[140px]"
+                  src="https://i.ibb.co/8BgvpxM/Img-10.png"
+                  alt=""
+                />
+              </div>
+              <div class="">
+                <div class="flex gap-3">
+                  <p
+                    class="uppercase text-primary text-[14px] leading-[14px] font-medium bg-white px-3 py-1 rounded-[4px] updatesShadow"
+                  >
+                    cloud
+                  </p>
+                  <p
+                    class="uppercase text-primary text-[14px] leading-[14px] font-medium bg-white px-3 py-1 rounded-[4px] updatesShadow"
+                  >
+                    app development
+                  </p>
+                </div>
+                <h5 class="leading-[30px] mt-1 border-b pb-3">
+                  15+ Most Effective and Proven Time Management Techniques
+                </h5>
+                <p class="font-medium leading-[26px] tracking-[-0.5px] mt-2">
+                  October 27, 2021 | 4 min read
+                </p>
+              </div>
+            </div>
+            <div class="flex md:flex-row flex-col gap-[30px]">
+              <div class="">
+                <img
+                  class="!min-w-[170px] h-[140px]"
+                  src="https://i.ibb.co/cXcV6TS/Img-11.png"
+                  alt=""
+                />
+              </div>
+              <div class="">
+                <div class="flex gap-3">
+                  <p
+                    class="uppercase text-primary text-[14px] leading-[14px] font-medium bg-white px-3 py-1 rounded-[4px] updatesShadow"
+                  >
+                    cloud
+                  </p>
+                  <p
+                    class="uppercase text-primary text-[14px] leading-[14px] font-medium bg-white px-3 py-1 rounded-[4px] updatesShadow"
+                  >
+                    app development
+                  </p>
+                </div>
+                <h5 class="leading-[30px] mt-1 border-b pb-3">
+                  15+ Most Effective and Proven Time Management Techniques
+                </h5>
+                <p class="font-medium leading-[26px] tracking-[-0.5px] mt-2">
+                  October 27, 2021 | 4 min read
+                </p>
+              </div>
+            </div>
+            <div class="flex md:flex-row flex-col gap-[30px]">
+              <div class="">
+                <img
+                  class="!min-w-[170px] h-[140px]"
+                  src="https://i.ibb.co/DpYTMx5/Img-12.png"
+                  alt=""
+                />
+              </div>
+              <div class="">
+                <div class="flex gap-3">
+                  <p
+                    class="uppercase text-primary text-[14px] leading-[14px] font-medium bg-white px-3 py-1 rounded-[4px] updatesShadow"
+                  >
+                    cloud
+                  </p>
+                  <p
+                    class="uppercase text-primary text-[14px] leading-[14px] font-medium bg-white px-3 py-1 rounded-[4px] updatesShadow"
+                  >
+                    app development
+                  </p>
+                </div>
+                <h5 class="leading-[30px] mt-1 border-b pb-3">
+                  15+ Most Effective and Proven Time Management Techniques
+                </h5>
+                <p class="font-medium leading-[26px] tracking-[-0.5px] mt-2">
+                  October 27, 2021 | 4 min read
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- latest news section end -->
+    </main>
+
+    <!-- footer  start -->
+    <footer class="bg-[#1D1E25] pt-[100px] pb-[80px] relative">
+      <div class="absolute right-20 -top-5">
+        <img src="https://i.ibb.co/vv1Pr9c/Element-5.png" alt="" />
+      </div>
+      <div class="absolute left-8 top-14">
+        <img src="https://i.ibb.co/mb8r7Mq/Element.png" alt="" />
+      </div>
+      <div class="absolute bottom-10">
+        <img src="https://i.ibb.co/gSRDXT3/Element-1.png" alt="" />
+      </div>
+      <section class="w-4/5 mx-auto">
+        <div class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-4">
+          <div>
+            <p class="text-[20px] text-white font-bold leading-5 mb-10">
+              Product
+            </p>
+            <ul>
+              <li
+                class="cursor-pointer hover:underline leading-5 font-medium text-white opacity-50"
+              >
+                Email Row
+              </li>
+              <li
+                class="cursor-pointer hover:underline leading-5 my-[20px] font-medium text-white opacity-50"
+              >
+                Free Tools
+              </li>
+              <li
+                class="cursor-pointer hover:underline leading-5 my-[20px] font-medium text-white opacity-50"
+              >
+                Agents
+              </li>
+              <li
+                class="cursor-pointer hover:underline leading-5 my-[20px] font-medium text-white opacity-50"
+              >
+                Blog
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p class="text-[20px] text-white font-bold leading-5 mb-10">
+              Resources
+            </p>
+            <ul>
+              <li
+                class="cursor-pointer hover:underline leading-5 font-medium text-white opacity-50"
+              >
+                Our Agents
+              </li>
+              <li
+                class="cursor-pointer hover:underline leading-5 my-[20px] font-medium text-white opacity-50"
+              >
+                Member Stories
+              </li>
+              <li
+                class="cursor-pointer hover:underline leading-5 my-[20px] font-medium text-white opacity-50"
+              >
+                Video
+              </li>
+              <li
+                class="cursor-pointer hover:underline leading-5 my-[20px] font-medium text-white opacity-50"
+              >
+                Free trial
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p class="text-[20px] text-white font-bold leading-5 mb-10">
+              Company
+            </p>
+            <ul>
+              <li
+                class="cursor-pointer hover:underline leading-5 font-medium text-white opacity-50"
+              >
+                Patnerships
+              </li>
+              <li
+                class="cursor-pointer hover:underline leading-5 my-[20px] font-medium text-white opacity-50"
+              >
+                Terms of use
+              </li>
+              <li
+                class="cursor-pointer hover:underline leading-5 my-[20px] font-medium text-white opacity-50"
+              >
+                Privacy
+              </li>
+              <li
+                class="cursor-pointer hover:underline leading-5 my-[20px] font-medium text-white opacity-50"
+              >
+                Sitemap
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p class="text-[20px] text-white font-bold leading-5 mb-10">
+              Get in touch
+            </p>
+            <p class="font-medium leading-5 text-white opacity-50">
+              You’ll find your next Marketing valu you prefer.
+            </p>
+            <div class="flex items-center gap-3 mt-[62px]">
+              <div
+                class="h-[32px] w-[32px] rounded-[6px] flex items-center justify-center bg-white"
+              >
+                <i class="fa-brands fa-facebook-f"></i>
+              </div>
+              <div
+                class="h-[32px] w-[32px] rounded-[6px] flex items-center justify-center bg-white"
+              >
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+              <div
+                class="h-[32px] w-[32px] rounded-[6px] flex items-center justify-center bg-white"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center justify-between flex-wrap mt-[80px]">
+          <div>
+            <p class="text-[30px] font-bold italic text-white">
+              Sasrico<span class="text-primary2">.</span>
+            </p>
+          </div>
+          <div>
+            <p class="font-medium text-white opacity-50">
+              Copyright 2020.com, All rights reserved.
+            </p>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <!-- footer  end -->
+
+    <!-- jQuery Cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="../main.js"></script>
+
+    <script></script>
+  </body>
+</html>
